@@ -1,0 +1,100 @@
+nav {
+    width: 100%;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.parte-logo {
+    width: 200px;
+    height: 100%;
+    background-image: url('../img/logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.link-logo{
+    width: 200px;
+    height: 100%;
+}
+
+.parteOptions {
+    width: calc(100% - 200px);
+    height: 100%;
+    display: flex;
+}
+
+.parteOptions ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+    flex-direction: row;
+}
+
+.parteOptions ul li {
+    margin: 10px;
+}
+
+.parteOptions ul li a {
+    text-decoration: none;
+    color: #000;
+    transition: .3s ease-in;
+}
+
+.parteOptions ul li a:hover {
+    text-decoration: none;
+    color: #ff7b00;
+    transition: .3s ease-in;
+}
+
+.container-cta-nav {
+    width: 120px;
+    height: 55px;
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.cta-conta-user-nav{
+    width: 50%;
+    border-radius: 12px;
+    height: 100%;
+    background-image: url('../img/user-icon.png');
+    background-repeat: no-repeat;
+    background-size:33px;
+    background-position: center;
+    cursor: pointer;
+    transition: .3s ease-in;
+}
+
+.cta-conta-user-nav:hover{
+    box-shadow: inset 0px 0px 5px 5px #92dcff88;
+    transition: .3s ease-in;
+}
+
+.cta-carrinho-nav {
+    width: 50%;
+    border-radius: 12px;
+    height: 100%;
+    background-image: url('../img/carrinho-icon.png');
+    background-repeat: no-repeat;
+    background-size:33px;
+    background-position: center;
+    cursor: pointer; 
+    transition: .3s ease-in;
+}
+
+.cta-carrinho-nav:hover{
+    box-shadow: inset 0px 0px 5px 5px #92dcff88;
+    transition: .3s ease-in;
+}
