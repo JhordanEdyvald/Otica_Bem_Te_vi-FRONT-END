@@ -12,15 +12,17 @@
     <?php
         //INCLUDES
         include('./lib/navbar.php');
-        include('./lib/nav-header.php');
+        include('./lib/header.php');
         include('./lib/destaque-inicio.php');
         include('./lib/footer.php');
         //FIM INCLUDES
         $menu = new navbar();
+        $header = new header();
     ?>
 
+
     <!--INICIO DO CODIGO HTML-->
-    <br><br><br><br>
+
 
     <!-- BLOCO 1 TEXTO -->
     <div class="container-principal">

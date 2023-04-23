@@ -99,3 +99,34 @@ nav {
     box-shadow: inset 0px 0px 5px 5px #92dcff88;
     transition: .3s ease-in;
 }
+
+@media screen and (max-width: 1012px) {
+    nav {
+        flex-direction: column;
+        height: 160px;
+      }
+    
+      .parte-logo {
+        width: 100%;
+      }
+    
+      .parteOptions {
+        width: 100%;
+        flex-direction: column;
+      }
+    
+      .parteOptions ul {
+        justify-content: center;
+      }
+    
+      .parteOptions ul li {
+        width: 120px;
+        margin: 0;
+        color: #fff;
+      }
+    
+      .container-cta-nav {
+        width: 100%;
+        margin-top: 0;
+      }
+}
