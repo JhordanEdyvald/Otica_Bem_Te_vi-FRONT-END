@@ -6,6 +6,7 @@ nav {
     align-items: center;
     position: fixed;
     z-index: 9;
+    transition: .3s ease-in;
 }
 
 .parte-logo {
@@ -41,6 +42,8 @@ nav {
 
 .parteOptions ul li {
     margin: 10px;
+    font-size: 30px;
+    font-family: 'Ligconsolata';
 }
 
 .parteOptions ul li a {
@@ -51,7 +54,7 @@ nav {
 
 .parteOptions ul li a:hover {
     text-decoration: none;
-    color: #ff7b00;
+    color: #ffffff;
     transition: .3s ease-in;
 }
 
@@ -79,7 +82,7 @@ nav {
 }
 
 .cta-conta-user-nav:hover{
-    box-shadow: inset 0px 0px 5px 5px #92dcff88;
+    box-shadow: inset 0px 0px 5px 5px #ffce9288;
     transition: .3s ease-in;
 }
 
@@ -96,7 +99,7 @@ nav {
 }
 
 .cta-carrinho-nav:hover{
-    box-shadow: inset 0px 0px 5px 5px #92dcff88;
+    box-shadow: inset 0px 0px 5px 5px #ffce9288;
     transition: .3s ease-in;
 }
 
@@ -121,7 +124,6 @@ nav {
     
       .parteOptions ul li {
         width: 120px;
-        margin: 0;
         color: #fff;
       }
     

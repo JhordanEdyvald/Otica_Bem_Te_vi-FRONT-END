@@ -1,3 +1,12 @@
+@keyframes bannerMulher{
+    0% {transform: rotate(0deg);}
+    15% {transform: rotate(2deg);}
+    25% {transform: rotate(-2deg);}
+    50% {transform: rotate(2deg);}
+    80% {transform: rotate(-2deg);}
+    100% {transform: rotate(0deg);}
+}
+
 .header-container {
     background-image: url('../img/banner-header-site.png');
     background-repeat: no-repeat;
@@ -12,13 +21,45 @@
     flex-direction: row-reverse;
 }
 
-.header-container h1{
+.mensagem-container {
     width: 40%;
-    color: #fff;
-    font-size: 2.1em;
-    font-weight: 300;
     margin-left: 75px;
+    position: relative;
+}
+
+.mensagem-container a{
+    width: 150px;
+    margin-top: 15px;
+    height: 50px;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 350;
+    background-color: #389d98;
+    color: #fff;
+    border: none;
+    transition: .3s;
+    font-family: 'Ligconsolata';
+}
+
+.mensagem-container a:hover {
+    background-color: #fff;
+    color: #389d98;
+    box-shadow:0px 0px 15px 0px #389d98;
+}
+
+.mensagem-container a:active{
+    background-color: #389d98!important;
+    color: #fff!important;
+}
+
+.header-container h1{
+    color: #fff;
     text-shadow: 0 0 3px #fdd02c;
+    font-weight: 300;
+    font-size: 2.1em;
+    animation-name: bannerMulher;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
 }
 
 .mulher-banner{
