@@ -19,11 +19,7 @@
         $menu = new navbar();
         $header = new header();
     ?>
-
-
     <!--INICIO DO CODIGO HTML-->
-
-
     <!-- BLOCO 1 TEXTO -->
     <div class="container-principal">
         <div class="container-informacoes1">
@@ -37,11 +33,10 @@
         <div class="img-girl1"></div>
         </div>
     <!-- Bloco 1 Final -->
-
-        <div class="container-informacoes2">
-            <div class="img-girl2">
+    <!-- Bloco 2 Final -->
+    <div class="container-informacoes2">
+        <div class="img-girl2">
             </div>
-            
             <div class="container-texto1">
                 <div class="texto">
                     What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer the 1960s with the release
@@ -51,10 +46,10 @@
                 </a>
             </div>
         </div>
-
     </div>
-
-
+    <!-- Bloco 2 Final -->
+    
+    
     <!--DECLARAÇÃO DE SCRIPTS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
