@@ -1,0 +1,49 @@
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #D9D9D9;
+    color: #fff;
+    height: 422px;
+    width: 100%;
+}
+  
+.logo {
+    width: 100%;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.logo img {
+    width: 222px;
+    height: 126px;
+    object-fit: cover;
+}
+
+.footer-info-containers{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 300px;
+}
+  
+.marca, .sobre, .atendimento, .redes-sociais {
+    width: 25%;
+    font-family: 'Marvel';
+    color: #000;
+    margin: 15px 0;
+}
+
+.marca ul, .sobre ul, .atendimento ul, .redes-sociais ul {
+    list-style: none;
+}
+
+.marca ul li a, .sobre ul li a, .atendimento ul li a, .redes-sociais ul li a{
+    color: #000;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+

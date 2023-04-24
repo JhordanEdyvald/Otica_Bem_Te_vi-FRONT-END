@@ -21,32 +21,47 @@
     ?>
     <!--INICIO DO CODIGO HTML-->
     <!-- BLOCO 1 TEXTO -->
-    <div class="container-principal">
-        <div class="container-informacoes1">
-            <div class="container-texto">
-                <h2>What is Lorem Ipsum?</h2>
-                <div class="texto">
-                    What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                </div>
-        </div>
-        <div class="img-girl1"></div>
-        </div>
-    <!-- Bloco 1 Final -->
-    <!-- Bloco 2 Final -->
-    <div class="container-informacoes2">
-        <div class="img-girl2">
+    <section>
+        <div class="container-principal">
+            <div class="container-informacoes1">
+                <div class="container-texto">
+                    <h2>What is Lorem Ipsum?</h2>
+                    <div class="texto">
+                        What is Lorem Ipsum?
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </div>
             </div>
-            <div class="container-texto1">
-                <div class="texto">
-                    What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer the 1960s with the release
+            <div class="img-girl1"></div>
+            </div>
+        <!-- Bloco 1 Final -->
+        <!-- Bloco 2 Final -->
+        <div class="container-informacoes2">
+            <div class="img-girl2">
                 </div>
-                <a href="#" class="armacao-botao">
-                    ARMAÇÕES
-                </a>
+                <div class="container-texto1">
+                    <div class="texto">
+                        What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer the 1960s with the release
+                    </div>
+                    <a href="#" class="armacao-botao">
+                        ARMAÇÕES
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="grade-produtos-sugestao">
+        <div class="index-sugestao-container">
+            <div class="card-sugestao">
+
+            </div>
+        </div>
+    </section>
+
+    <?php
+        //INICIO-FOOTER    
+            $footer = new footer();
+        //FINAL-FOOTER    
+    ?>
     <!-- Bloco 2 Final -->
     
     

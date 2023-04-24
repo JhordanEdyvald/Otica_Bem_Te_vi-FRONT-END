@@ -13,6 +13,11 @@
     src: url('../fonts/Mali-Regular.ttf');
 }
 
+@font-face {
+    font-family: 'Marvel';
+    src: url('../fonts/Marvel-Regular.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -140,6 +145,35 @@
     background-color: #000;
     color: #FF6C3B;
     transition: .3s ease-in;
+}
+
+.grade-produtos-sugestao {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.index-sugestao-container {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 595px;
+    flex-wrap: wrap;
+    gap: 13px 25px;
+    height: 236px;
+}
+
+.card-sugestao {
+    box-sizing: border-box;
+    width: 129px;
+    height: 110px;
+    border-radius: 21px;
+    box-shadow: 0px 0px 8px 0px #00000085;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width:1012px) {
