@@ -9,10 +9,10 @@
             <div class="parteOptions">
                 <ul>
                     <li>
-                        <a href="#">LENTES</a>
+                        <a href="./produtos.php">LENTES</a>
                     </li> 
                     <li>
-                        <a href="#">ARMAÇÕES</a>
+                        <a href="./produtos.php">ARMAÇÕES</a>
                     </li> 
                     <li>
                        <a href="#">CONTATOS</a>
