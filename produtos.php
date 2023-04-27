@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/produtos.css">
-    <title>ÓTICAS | BEM TE VI</title>
+    <title>ÓTICAS | BEM TE VI- PRODUTOS</title>
 </head>
 <body>
     <?php
@@ -19,11 +19,27 @@
         $menu = new navbar();
     ?>
     <!--INICIO DO CODIGO HTML-->
-    
-    <section class="grade-produtos-sugestao">
-        <div class="index-sugestao-container">
-            <div class="card-sugestao">
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section>
+        <div class="slide-container">
+            <div class="slide-content">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="img-content">
 
+                            <div class="card-image">
+                                <img src="img/img-oculos.png" alt="" class="card-img">
+                            </div>
+
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name"> Ray-Ban Versão 1</h2>
+                            <p class="conteudo">Olha que oculos bonito para vc comprar é uma belezinha aproveita e fique por dentro dos nossos preços</p>    
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
     </section>

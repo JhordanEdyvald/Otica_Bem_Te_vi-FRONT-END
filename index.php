@@ -30,14 +30,13 @@
                         What is Lorem Ipsum?
                         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                     </div>
-            </div>
+                </div>
             <div class="img-girl1"></div>
             </div>
         <!-- Bloco 1 Final -->
         <!-- Bloco 2 Final -->
-        <div class="container-informacoes2">
-            <div class="img-girl2">
-                </div>
+            <div class="container-informacoes2">
+                <div class="img-girl2"></div>
                 <div class="container-texto1">
                     <div class="texto">
                         What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer the 1960s with the release
