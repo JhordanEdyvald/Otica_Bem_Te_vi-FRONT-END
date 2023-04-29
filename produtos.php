@@ -57,7 +57,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
     <script src="./js/jquery-3.6.4.min.js"></script>
     <script src="./js/navbar.js"></script>
-    <script src="./js/index.js"></script>
+    <!--NÃO PRECISA DECLARA O ARQUIVIO DO JAVASCRIPT INDEX. <script src="./js/index.js"></script>-->
     <!--FIM DECLARAÇÃO DE SCRIPTS-->
 </body>
 </html>
