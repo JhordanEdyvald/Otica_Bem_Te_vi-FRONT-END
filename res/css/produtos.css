@@ -1,0 +1,384 @@
+@font-face {
+  font-family: "Ligconsolata";
+  src: url("../fonts/ligconsolata-regular.ttf");
+}
+
+@font-face {
+  font-family: "Merge One";
+  src: url("../fonts/MergeOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Mallanna";
+  src: url("../fonts/Mallanna-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Mali";
+  src: url("../fonts/Mali-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Marvel";
+  src: url("../fonts/Marvel-Regular.ttf");
+}
+
+@font-face {
+  font-family: "K2D light";
+  src: url("../fonts/K2D-Light.ttf");
+}
+
+@font-face {
+  font-family: "K2D";
+  src: url("../fonts/K2D-Regular.ttf");
+}
+
+body {
+  min-height: 100vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.banner-lens-page {
+  width: 100%;
+  height: 663px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-lens-page::after {
+  content: "";
+  background: linear-gradient(
+    221deg,
+    rgba(255, 18, 146, 0.958429) -146.71%,
+    rgba(255, 255, 255, 0) 43.65%
+  );
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -9;
+}
+
+.banner-lens-page::before {
+  content: "";
+  background: linear-gradient(141deg, #00ffc2 -146.71%, #ffffff00 43.65%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.banner-lens-page ul {
+  width: 95%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  padding: 0;
+}
+
+.banner-lens-page ul li {
+  list-style: none;
+  width: 30vw;
+  height: 45vh;
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.25));
+  border-radius: 33px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-lens-page h2 {
+  font-family: "Merge One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 53px;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin-bottom: 28px;
+}
+
+.banner-item1 {
+  background-image: url("../img/olho-verde.webp");
+}
+
+.banner-item2 {
+  background-image: url("../img/olho-azul.jpg");
+}
+
+.banner-item3 {
+  background-image: url("../img/olho-castanho.jpg");
+}
+
+.forma-de-pagamento {
+  width: 80%;
+  height: 40px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.forma-de-pagamento div {
+  width: 250px;
+  height: 100%;
+  background-image: url("../img/icones/bandeiras.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.forma-de-pagamento h4 {
+  font-family: "Marvel";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#pix-icon {
+  background-image: url("../img/icones/pix-icon.png");
+  width: 48px;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.section-daily-contact-lens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 710px;
+}
+
+.section-daily-contact-lens h1 {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merge One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.188em;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.section-daily-colours-lens {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 710px;
+}
+
+.section-daily-colours-lens h1 {
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Merge One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.188em;
+  text-align: center;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.colours-lens {
+  margin-top: 80px;
+}
+
+.container-suggest-contact-lens {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.container-card-item div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-card-item {
+  width: 314px;
+  height: 100%;
+  filter: drop-shadow(0px 4px 14px rgba(0, 0, 0, 0.35));
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 4px 14px #a7a7a7;
+  overflow: hidden;
+}
+
+.img-item {
+  height: 45%;
+  margin-bottom: 10%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../img/olho-azul.jpg");
+}
+
+.last-price {
+  width: 100%;
+  height: 5%;
+  padding-left: 10%;
+  font-family: "K2D";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  text-decoration-line: line-through;
+  color: #ababab;
+}
+
+.container-price-item {
+  width: 100%;
+  height: 10%;
+  justify-content: start !important;
+  padding: 0 0 0 10%;
+}
+
+.container-price-item .price {
+  max-width: 70%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.container-price-item .price p {
+  font-family: "K2D";
+  display: block;
+  font-style: normal;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 400;
+  width: 100%;
+  font-size: 2.013em;
+  flex-shrink: 0;
+  line-height: 38px;
+  margin: 0;
+  color: #000000;
+  justify-content: start;
+}
+
+.container-price-item .descount-percent {
+  width: 15%;
+  height: 22px;
+  border: 1px solid #ff0000;
+  border-radius: 4px;
+  margin-left: 4%;
+}
+
+.split-payment {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  color: #051199;
+  padding: 0 0 0 10%;
+  width: 100%;
+  height: 9%;
+}
+
+.quality-assessment {
+  width: 100%;
+  justify-content: start !important;
+  padding: 0 0 0 10%;
+  font-size: 1.4em;
+  height: 5%;
+}
+
+.quality-assessment div {
+  width: auto;
+  height: 100%;
+}
+.quality-assessment span {
+  font-family: "K2D";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.063em;
+  align-items: center;
+  color: #9b9b9b;
+}
+
+.buy-btn {
+  width: 100%;
+  height: 20%;
+}
+
+.buy-btn span {
+  background: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  width: 80%;
+  height: 50%;
+  font-family: "K2D light";
+  font-style: normal;
+  font-size: 1.313em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  transition: 0.3s ease-out;
+  cursor: pointer;
+}
+
+.buy-btn span:hover {
+  background-color: #fff;
+  color: #000000;
+  border: 1px solid #000;
+  transition: 0.3s ease-out;
+}
+
+.btn-ver-tudo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+.btn-ver-tudo button {
+  width: 323px;
+  height: 43px;
+  background: #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  font-family: "K2D light";
+  font-style: normal;
+  font-size: 1.875em;
+  text-align: center;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: .3s ease-out;
+}
+
+.btn-ver-tudo button:hover {
+  color: #000;
+  background: #fff;
+  border: 1px solid #000;
+  transition: .3s ease-out;
+}

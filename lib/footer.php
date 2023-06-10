@@ -1,10 +1,11 @@
 <?php
     class footer{
         function __construct(){
-            echo "<link rel='stylesheet' href='../css/footer.css'>";
+            
+            echo "<link rel='stylesheet' href='../res/css/footer.css'>";
             echo '<div class="footer">
             <div class="logo">
-                <img src="./img/logo.png" alt="Logo">
+                <img src="../res/img/icones/logo.png" alt="Logo">
             </div>
             <div class="footer-info-containers">
                 <div class="marca">

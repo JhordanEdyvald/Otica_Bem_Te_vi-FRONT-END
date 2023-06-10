@@ -12,7 +12,7 @@ nav {
 .parte-logo {
     width: 200px;
     height: 100%;
-    background-image: url('../img/logo.png');
+    background-image: url('../img/icones/logo.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -73,7 +73,7 @@ nav {
     width: 50%;
     border-radius: 12px;
     height: 100%;
-    background-image: url('../img/user-icon.png');
+    background-image: url('../img/icones/user-icon.png');
     background-repeat: no-repeat;
     background-size:33px;
     background-position: center;
@@ -90,7 +90,7 @@ nav {
     width: 50%;
     border-radius: 12px;
     height: 100%;
-    background-image: url('../img/carrinho-icon.png');
+    background-image: url('../img/icones/carrinho-icon.png');
     background-repeat: no-repeat;
     background-size:33px;
     background-position: center;

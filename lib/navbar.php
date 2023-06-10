@@ -1,7 +1,7 @@
 <?php
     class navbar{
         function __construct(){
-            echo "<link rel='stylesheet' href='../css/navbar.css'>";
+            echo "<link rel='stylesheet' href='../res/css/navbar.css'>";
             echo '<nav>
             <a class="link-logo" href="./index.php">
                 <div class="parte-logo"></div>
@@ -9,7 +9,7 @@
             <div class="parteOptions">
                 <ul>
                     <li>
-                        <a href="./produtos.php">LENTES</a>
+                        <a href="../pages/produtos.php">LENTES</a>
                     </li> 
                     <li>
                         <a href="./produtos.php">ARMAÇÕES</a>
@@ -29,7 +29,9 @@
                    </li> 
                 </ul>
             </div>
-        </nav>';
+        </nav>
+        <script src="./js/navbar.js"></script>
+        ';
         }
     }
 ?>
