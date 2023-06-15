@@ -35,12 +35,21 @@
     </section>
     <!-- Bloco 2 INICIO -->
 
+    <?php
+    /*include('../res/views/suggests_product.php');
+    use page\products\suggests\suggests_product;
+    $suggest_product = new suggests_product();*/
+    ?>
+
     <section class="container-view-produtos">
         <section class="section-daily-contact-lens">
             <h1>LENTES DE CONTATO DIÁRIO</h1>
             <div class="container-suggest-contact-lens">
                 <div class="container-card-item">
                     <div class="img-item"></div>
+                    <div class="title-item">
+                        <p>RAY-BAN - HEXAGONAL FLAT LENSES</p>
+                    </div>
                     <span class="last-price">R$ 800,00</span>
                     <div class="container-price-item">
                         <div class="price">
@@ -69,7 +78,7 @@
             </div>
         </section>
     </section>
-    
+
     <section class="container-view-produtos colours-lens">
         <section class="section-daily-colours-lens">
             <h1>LENTES DE CONTATO DIÁRIO</h1>
