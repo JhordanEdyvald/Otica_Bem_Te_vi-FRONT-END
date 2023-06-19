@@ -163,6 +163,7 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100%;
+  width: 100%;
 }
 
 .section-daily-contact-lens h1 {
@@ -258,6 +259,7 @@ body {
   margin: 0;
   overflow: hidden;
   padding: 0 10%;
+  text-transform: uppercase;
 }
 
 .last-price {

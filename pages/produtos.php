@@ -39,6 +39,7 @@
     /*include('../res/views/suggests_product.php');
     use page\products\suggests\suggests_product;
     $suggest_product = new suggests_product();*/
+    
     ?>
 
     <section class="container-view-produtos">
@@ -60,11 +61,11 @@
                     <span class="split-payment">12x 66,65 sem juros</span>
                     <div class="quality-assessment">
                         <div>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
+                            <i class="fa-solid fa-star" style="color: #000;"></i>
+                            <i class="fa-solid fa-star" style="color: #000;"></i>
+                            <i class="fa-solid fa-star-half-stroke" style="color: #000;"></i>
+                            <i class="fa-regular fa-star" style="color: #000;"></i>
+                            <i class="fa-regular fa-star" style="color: #000;"></i>
                         </div>
                         <span>1.153</span>
                     </div>
@@ -72,6 +73,32 @@
                         <span>COMPRAR</span>
                     </div>
                 </div>
+
+                <?php
+                        include('../res/views/product_card.php');
+                        use element\products\card;
+                    
+                        $cardInfo = json_decode('{
+                            "id": 1,
+                            "img": "../res/img/olho-azul.jpg",
+                            "title": "Exemplo de Produto",
+                            "price": 19.99,
+                            "installments": "3x de R$ 6.66",
+                            "lastPrice": 24.99,
+                            "assessmentStars": {
+                              "first": 1,
+                              "second": 2,
+                              "third": 3,
+                              "fourth": 4,
+                              "fifth": 5
+                            },
+                            "productCtaBtn": "https://www.example.com/comprar"
+                          }');
+                          
+                          $card = new card\product_card($cardInfo);
+                          echo $card->elementCard;
+                    
+                    ?>
             </div>
             <div class="btn-ver-tudo">
                 <button>VER MAIS</button>
@@ -95,11 +122,11 @@
                     <span class="split-payment">12x 66,65 sem juros</span>
                     <div class="quality-assessment">
                         <div>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
-                            <ion-icon name="star-outline"></ion-icon>
+                            <i class="fa-regular fa-star" style="color: #000000;"></i>
+                            <i class="fa-regular fa-star" style="color: #000000;"></i>
+                            <i class="fa-regular fa-star" style="color: #000000;"></i>
+                            <i class="fa-regular fa-star" style="color: #000000;"></i>
+                            <i class="fa-regular fa-star" style="color: #000000;"></i>
                         </div>
                         <span>1.153</span>
                     </div>
@@ -131,8 +158,11 @@
         crossorigin="anonymous"></script>
     <script src="../js/jquery-3.6.4.min.js"></script>
     <script src="../js/navbar.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/87b9fef10b.js" crossorigin="anonymous"></script>
+    <!--
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    -->
     <!--NÃO PRECISA DECLARA O ARQUIVIO DO JAVASCRIPT INDEX. <script src="./js/index.js"></script>-->
     <!--FIM DECLARAÇÃO DE SCRIPTS-->
 </body>
