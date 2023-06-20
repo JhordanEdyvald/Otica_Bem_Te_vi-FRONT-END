@@ -1,13 +1,12 @@
 <?php
 namespace page\products\suggests;
-include('./product_card.php');
-use element\products\card;
+require_once('./product_card.php');
+use element\products\card\product_card as newCard;
 class suggests_product
 {
     private $cardObjComplete;
     public function __construct($pagesize, $objectInfo, $titlePage = null, $callToAction = null)
     {
-        $Card = $this->processCard();
 
         echo "
         <section class='section-daily-contact-lens'>
@@ -18,6 +17,14 @@ class suggests_product
         </div>
     </section>
     ";
+    }
+
+    private function suggestsCards($object){
+        $infoArrayFromObjCards = $object->suggestCards;
+        $objCardElements = [];
+        foreach($infoArrayFromObjCards as $CardInfo => $index){
+            $objCardElements[] = new newCard($CardInfo);
+        }
     }
 
 }

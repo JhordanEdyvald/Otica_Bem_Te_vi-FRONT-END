@@ -63,7 +63,7 @@ class product_card {
         $elementsCompleteArray = [$object->first, $object->second, $object->third, $object->fourth, $object->fifth];
         $assessment = $this->calcScore($elementsCompleteArray[0], $elementsCompleteArray[1], $elementsCompleteArray[2], $elementsCompleteArray[3], $elementsCompleteArray[4]);
         $middleStar = false;
-        $starColour = '#224e69';
+        $starColour = '#121079';
         if (fmod($assessment, 1) == 0.5) {
             $middleStar = true;
         }

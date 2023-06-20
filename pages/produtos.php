@@ -76,26 +76,26 @@
 
                 <?php
                         include('../res/views/product_card.php');
-                        use element\products\card;
+                        use element\products\card\product_card as danonaoGrosso;
                     
                         $cardInfo = json_decode('{
                             "id": 1,
                             "img": "../res/img/olho-azul.jpg",
-                            "title": "Exemplo de Produto",
+                            "title": "Óculos de sol - rayban preto",
                             "price": 19.99,
                             "installments": "3x de R$ 6.66",
                             "lastPrice": 24.99,
                             "assessmentStars": {
                               "first": 1,
-                              "second": 2,
+                              "second": 12,
                               "third": 3,
-                              "fourth": 4,
-                              "fifth": 5
+                              "fourth": 1,
+                              "fifth": 1
                             },
                             "productCtaBtn": "https://www.example.com/comprar"
                           }');
                           
-                          $card = new card\product_card($cardInfo);
+                          $card = new danonaoGrosso($cardInfo);
                           echo $card->elementCard;
                     
                     ?>
