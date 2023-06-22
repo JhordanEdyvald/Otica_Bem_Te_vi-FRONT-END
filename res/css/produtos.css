@@ -339,7 +339,8 @@ body {
   font-family: "K2D";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.063em;
+  margin-left: 8px;
+  font-size: 0.663em;
   align-items: center;
   color: #9b9b9b;
 }
@@ -349,7 +350,7 @@ body {
   height: 15%;
 }
 
-.buy-btn span {
+.buy-btn a {
   background: #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -365,9 +366,10 @@ body {
   color: #ffffff;
   transition: 0.3s ease-out;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.buy-btn span:hover {
+.buy-btn a:hover {
   background-color: #fff;
   color: #000000;
   border: 1px solid #000;

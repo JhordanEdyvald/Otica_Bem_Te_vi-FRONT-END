@@ -35,8 +35,8 @@ class product_card {
                 </div>
                 <span>{$allAssessment}</span>
             </div>
-            <div class='buy-btn' href='{$productCtaBtn}'>
-                <span>COMPRAR</span>
+            <div class='buy-btn'>
+                <a target='_blank' href='{$productCtaBtn}'>COMPRAR</a>
             </div>
         </div>";
     }
