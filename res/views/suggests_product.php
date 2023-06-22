@@ -64,7 +64,6 @@ class suggests_product
                 "title": "Óculos de sol - Estilo Vibrante",
                 "price": 18.99,
                 "installments": "2x de R$ 9.50",
-                "lastPrice": 21.99,
                 "assessmentStars": {
                     "first": 4,
                     "second": 7,

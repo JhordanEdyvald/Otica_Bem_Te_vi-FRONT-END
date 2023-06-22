@@ -10,7 +10,7 @@ class product_card {
         $title = $cardInfo->title;
         $price = $cardInfo->price;
         $installments = $cardInfo->installments;
-        $lastPrice = $cardInfo->lastPrice;
+        $lastPrice = isset($cardInfo->lastPrice) ? $cardInfo->lastPrice : 0;
         $assessmentStars = $cardInfo->assessmentStars;
         $productCtaBtn = $cardInfo->productCtaBtn;
         $descount = $this->calcDiscountPercent($price, $lastPrice);
@@ -21,12 +21,12 @@ class product_card {
             <div class='title-item'>
                 <p>{$title}</p>
             </div>
-            <span class='last-price'>{$lastPrice}</span>
+            ". ($lastPrice != 0 ? '<span class="last-price">'.$lastPrice.'</span>' : '')."
             <div class='container-price-item'>
                 <div class='price'>
                     <p>{$price}</p>
                 </div>
-                <div class='descount-percent'>-{$descount}%</div>
+                ". ($lastPrice != 0 ? '<div class="descount-percent">-'.$descount.'%</div>' : '')."
             </div>
             " . (isset($installments) ? "<span class='split-payment'>{$installments}</span>" : "") . "
             <div class='quality-assessment'>
