@@ -39,8 +39,41 @@
     /*include('../res/views/suggests_product.php');
     use page\products\suggests\suggests_product;
     $suggest_product = new suggests_product();*/
-    
+
     ?>
+
+    <selection class="container-view-produtos">
+    <?php
+                include('../res/views/product_card.php');
+                 use element\products\card\product_card as danonaoGrosso;
+             
+                /* $cardInfo = json_decode('{
+                     "id": 1,
+                     "img": "../res/img/olho-azul.jpg",
+                     "title": "Óculos de sol - rayban preto",
+                     "price": 19.99,
+                     "installments": "3x de R$ 6.66",
+                     "lastPrice": 24.99,
+                     "assessmentStars": {
+                       "first": 1,
+                       "second": 12,
+                       "third": 3,
+                       "fourth": 1,
+                       "fifth": 1
+                     },
+                     "productCtaBtn": "https://www.example.com/comprar"
+                   }');
+                   
+                   $card = new danonaoGrosso($cardInfo);
+                   echo $card->elementCard;*/
+                   
+
+                   include('../res/views/suggests_product.php');
+                   use page\products\suggests\suggests_product as meuzovo;
+
+                   $tset = new meuzovo();
+                ?>
+    </selection>
 
     <section class="container-view-produtos">
         <section class="section-daily-contact-lens">
@@ -73,32 +106,6 @@
                         <span>COMPRAR</span>
                     </div>
                 </div>
-
-                <?php
-                        include('../res/views/product_card.php');
-                        use element\products\card\product_card as danonaoGrosso;
-                    
-                        $cardInfo = json_decode('{
-                            "id": 1,
-                            "img": "../res/img/olho-azul.jpg",
-                            "title": "Óculos de sol - rayban preto",
-                            "price": 19.99,
-                            "installments": "3x de R$ 6.66",
-                            "lastPrice": 24.99,
-                            "assessmentStars": {
-                              "first": 1,
-                              "second": 12,
-                              "third": 3,
-                              "fourth": 1,
-                              "fifth": 1
-                            },
-                            "productCtaBtn": "https://www.example.com/comprar"
-                          }');
-                          
-                          $card = new danonaoGrosso($cardInfo);
-                          echo $card->elementCard;
-                    
-                    ?>
             </div>
             <div class="btn-ver-tudo">
                 <button>VER MAIS</button>
