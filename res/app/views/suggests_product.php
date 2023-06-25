@@ -11,15 +11,14 @@ class suggests_product
     {
         $objectInfo = json_decode($objectInfo);
         $titlePage = isset($titlePage) ? "<h1>".$titlePage."</h1>" : '';
+        $callToAction = isset($callToAction) ? "<div class='btn-ver-tudo'><button href='".$callToAction."'>VER MAIS</button></div>" : '<div style="height:20%;"></div>';
         echo "
         <section class='section-daily-contact-lens'>
                 $titlePage
                 <div class='container-suggest-contact-lens'>
                     {$this->suggestsCards($objectInfo, $pagesize)}
                 </div>
-                <div class='btn-ver-tudo'>
-                    <button>VER MAIS</button>
-                </div>
+                $callToAction
         </section>
     ";
     }

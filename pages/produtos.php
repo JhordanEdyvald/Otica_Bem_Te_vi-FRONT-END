@@ -12,9 +12,16 @@
 
 <body>
     <?php
-    //INCLUDES
     include('../lib/navbar.php');
     include('../lib/footer.php');
+    include('../res/app/controller/suggests_product.php');
+    include('../res/app/views/suggests_product.php');
+    include('../res/app/views/product_card.php');
+    use controller\products\suggestsCards\suggests_product as ready_suggests;
+    ?>
+
+    <?php
+    //INCLUDES
     //FIM INCLUDES
     $menu = new navbar();
     ?>
@@ -33,107 +40,35 @@
             </h4>
         </div>
     </section>
-    <!-- Bloco 2 INICIO -->
-
-    <?php
-    /*include('../res/views/suggests_product.php');
-    use page\products\suggests\suggests_product;
-    $suggest_product = new suggests_product();*/
-
-    ?>
-
-    <selection class="container-view-produtos">
-        <?php
-        include('../res/views/product_card.php');
-        include('../res/views/suggests_product.php');
-        use page\products\suggests\suggests_product as meuzovo;
-
-        $tset = new meuzovo();
-        ?>
-    </selection>
 
     <section class="container-view-produtos">
-        <section class="section-daily-contact-lens">
-            <h1>LENTES DE CONTATO DIÁRIO</h1>
-            <div class="container-suggest-contact-lens">
-                <div class="container-card-item">
-                    <div class="img-item"></div>
-                    <div class="title-item">
-                        <p>RAY-BAN - HEXAGONAL FLAT LENSES</p>
-                    </div>
-                    <span class="last-price">R$ 800,00</span>
-                    <div class="container-price-item">
-                        <div class="price">
-                            <p>R$ 600,00</p>
-                        </div>
-                        <div class="descount-percent">-25%</div>
-                    </div>
-                    <span class="split-payment">12x 66,65 sem juros</span>
-                    <div class="quality-assessment">
-                        <div>
-                            <i class="fa-solid fa-star" style="color: #000;"></i>
-                            <i class="fa-solid fa-star" style="color: #000;"></i>
-                            <i class="fa-solid fa-star-half-stroke" style="color: #000;"></i>
-                            <i class="fa-regular fa-star" style="color: #000;"></i>
-                            <i class="fa-regular fa-star" style="color: #000;"></i>
-                        </div>
-                        <span>1.153</span>
-                    </div>
-                    <div class="buy-btn">
-                        <span>COMPRAR</span>
-                    </div>
-                </div>
-            </div>
-            <div class="btn-ver-tudo">
-                <button>VER MAIS</button>
-            </div>
-        </section>
+        <?php
+        $screen_width = $_GET['size_screen'];
+
+        $chamada = new ready_suggests();
+        if (isset($screen_width)) {
+            $chamada->lens_contact_view($screen_width);
+        } else {
+            echo '<script> window.location.href = window.location.href + "?size_screen=" + screen.width; </script>';
+        }
+        ?>
     </section>
 
     <section class="container-view-produtos colours-lens">
-        <section class="section-daily-colours-lens">
-            <h1>LENTES DE CONTATO DIÁRIO</h1>
-            <div class="container-suggest-contact-lens">
-                <div class="container-card-item">
-                    <div class="img-item"></div>
-                    <span class="last-price">R$ 800,00</span>
-                    <div class="container-price-item">
-                        <div class="price">
-                            <p>R$ 600,00</p>
-                        </div>
-                        <div class="descount-percent">-25%</div>
-                    </div>
-                    <span class="split-payment">12x 66,65 sem juros</span>
-                    <div class="quality-assessment">
-                        <div>
-                            <i class="fa-regular fa-star" style="color: #000000;"></i>
-                            <i class="fa-regular fa-star" style="color: #000000;"></i>
-                            <i class="fa-regular fa-star" style="color: #000000;"></i>
-                            <i class="fa-regular fa-star" style="color: #000000;"></i>
-                            <i class="fa-regular fa-star" style="color: #000000;"></i>
-                        </div>
-                        <span>1.153</span>
-                    </div>
-                    <div class="buy-btn">
-                        <span>COMPRAR</span>
-                    </div>
-                </div>
-            </div>
-            <div class="btn-ver-tudo">
-                <button>VER MAIS</button>
-            </div>
-        </section>
+        <?php
+        $screen_width = $_GET['size_screen'];
+        $chamada = new ready_suggests();
+        if (isset($screen_width)) {
+            $chamada->colored_lenses($screen_width);
+        } else {
+            echo '<script> window.location.href = window.location.href + "?size_screen=" + screen.width; </script>';
+        }
+        ?>
     </section>
 
-
-    <!-- Bloco 2 Final -->
-    <!--FIM DO CODIGO HTML-->
     <?php
-    //INICIO-FOOTER    
     $footer = new footer();
-    //FINAL-FOOTER    
     ?>
-    <!--DECLARAÇÃO DE SCRIPTS-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
         integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
         crossorigin="anonymous"></script>
@@ -143,12 +78,6 @@
     <script src="../js/jquery-3.6.4.min.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="https://kit.fontawesome.com/87b9fef10b.js" crossorigin="anonymous"></script>
-    <!--
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    -->
-    <!--NÃO PRECISA DECLARA O ARQUIVIO DO JAVASCRIPT INDEX. <script src="./js/index.js"></script>-->
-    <!--FIM DECLARAÇÃO DE SCRIPTS-->
 </body>
 
 </html>
